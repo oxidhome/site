@@ -3,7 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>OxidHome — Home automation, forged in Rust</title>
+    <title>{{ config.title }} — {{ config.description }}</title>
+    <meta name="description" content="{{ config.description }}">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <style>
         html, body {
@@ -42,9 +43,9 @@
 </head>
 <body>
 <main>
-    <img src="/logo.svg" alt="oxidhome">
-    <h1>OxidHome</h1>
-    <p>Home automation, forged in Rust</p>
+    <img src="/logo.svg" alt="{{ config.title }}">
+    <h1>{{ config.title }}</h1>
+    <p>{{ config.description }}</p>
     <b>under construction</b>
 </main>
 </body>
