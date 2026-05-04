@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}{{ config.title }}{% endblock %}</title>
+    <meta name="description" content="{% block description %}{{ config.description }}{% endblock %}">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/site.css">
+</head>
+<body>
+<header>
+    <a href="/" class="brand">
+        <img src="/logo.svg" alt="{{ config.title }}">
+        <span>{{ config.title }}</span>
+    </a>
+    <nav>
+        <a href="/news/">News</a>
+        <a href="/discussions/">Discussions</a>
+    </nav>
+</header>
+<main>
+    {% block content %}{% endblock %}
+</main>
+</body>
+</html>

@@ -1,0 +1,122 @@
+:root {
+    --bg: #0d0d0d;
+    --fg: #c5c8c6;
+    --muted: #8a8f8a;
+    --link: #8ab4f8;
+    --rule: #1f1f1f;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    line-height: 1.5;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    color: var(--link);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid var(--rule);
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+header .brand {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    color: var(--fg);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+header .brand img {
+    width: 28px;
+    height: 28px;
+}
+
+header nav {
+    display: flex;
+    gap: 1rem;
+}
+
+header nav a {
+    color: var(--muted);
+    text-decoration: none;
+}
+
+header nav a:hover,
+header nav a[aria-current] {
+    color: var(--fg);
+}
+
+main {
+    flex: 1;
+    padding: 2rem 1.5rem;
+    max-width: 48rem;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.hero {
+    text-align: center;
+    padding: 3rem 0 2rem;
+}
+
+.hero img {
+    width: 200px;
+    max-width: 60vw;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    margin: 0 0 0.5rem;
+}
+
+.tagline {
+    color: var(--muted);
+    margin: 0 0 1.5rem;
+}
+
+.under-construction {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.25rem 0.75rem;
+    border: 1px dashed var(--muted);
+    color: var(--muted);
+    font-size: 0.85rem;
+}
+
+ul.posts {
+    list-style: none;
+    padding: 0;
+}
+
+ul.posts li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--rule);
+}
+
+ul.posts time {
+    color: var(--muted);
+    font-size: 0.85rem;
+    margin-left: 0.5rem;
+}
