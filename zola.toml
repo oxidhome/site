@@ -5,16 +5,13 @@ base_url = "https://oxidhome.info"
 compile_sass = false
 
 # Whether to build a search index to be used later on by a JavaScript library
-build_search_index = true
+build_search_index = false
 
 # Site title — used in <title>, headings, and feed metadata
 title = "OxidHome"
 
 # One-line description — used in <meta name="description"> and feeds
 description = "Home automation, forged in Rust"
-
-# Theme to use; resolved under themes/<name> (here: themes/hacker submodule)
-theme = "hacker"
 
 # Whether to generate Atom feeds for sections that opt in
 generate_feeds = true
