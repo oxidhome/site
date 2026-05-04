@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Background: transparent -->
+  <!-- Hexagon (Rust crate motif) - centered in 400x400 -->
+  <!-- Hex dimensions: width 280, height 280, centered at (200, 200) -->
+  <polygon points="200,60 321.24,130 321.24,270 200,340 78.76,270 78.76,130"
+           fill="none" stroke="#C25A2C" stroke-width="14" stroke-linejoin="round"/>
+  <!-- House with door cut out (evenodd fill rule makes inner rect transparent) -->
+  <path fill-rule="evenodd" fill="#C25A2C"
+        d="M 130,280 L 130,215 L 200,145 L 270,215 L 270,280 Z M 186,280 L 186,240 L 214,240 L 214,280 Z"/>
+</svg>
